@@ -1,0 +1,1 @@
+export { SubPageOne } from './ui'

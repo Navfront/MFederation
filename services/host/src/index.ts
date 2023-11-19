@@ -1,3 +1,5 @@
-import { sum } from '@packages/shared'
+import { createRoot } from 'react-dom/client'
+import { App } from './app'
 
-console.log(sum(1, 3))
+const rootEl = document.getElementById('root')
+createRoot(rootEl).render(App({}))
