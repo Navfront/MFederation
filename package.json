@@ -4,5 +4,14 @@
   "workspaces": [
     "packages/*",
     "services/*"
-  ]
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start-main\" \"npm run start-about\" \"npm run start-host\"",
+    "start-main": "cd services/main && npm start",
+    "start-about": "cd services/about && npm start",
+    "start-host": "cd services/host && npm start"
+  }
 }

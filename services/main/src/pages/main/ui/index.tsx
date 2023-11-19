@@ -10,8 +10,8 @@ const MainPage: FC = () => {
         Main Page <Icon width={50} fill={'red'} />
       </h1>
 
-      <Link to={'/one'}>Sub1</Link>
-      <Link to={'/two'}>Sub2</Link>
+      <Link to={'/main/one'}>Sub1</Link>
+      <Link to={'/main/two'}>Sub2</Link>
       <Link to={'/about'}>To About Page</Link>
       <Outlet />
     </section>
