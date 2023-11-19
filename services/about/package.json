@@ -2,7 +2,7 @@
   "name": "about",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack serve --env port=3000 mode=development",
+    "start": "webpack serve --env port=3002 mode=development",
     "build:prod": "webpack --env mode=production",
     "build:dev": "webpack --env mode=development",
     "test": "echo \"Error: no test specified\" && exit 1"
