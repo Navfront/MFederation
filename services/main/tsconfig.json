@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "outDir": "config/webpack",
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@packages/shared": ["packages/shared/src"],
+      "@packages/build-config": ["packages/build-config/src"],
+      "@/*": ["./src/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@shared/*": ["./src/shared/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
